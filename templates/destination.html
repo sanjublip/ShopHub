@@ -1,0 +1,82 @@
+{% load static %}
+<html xmlns:C="http://www.w3.org/1999/xhtml">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+        <title>Responsive product card Nike</title>
+    </head>
+    <body>
+        <!-- ===== MAIN HEADER ===== -->
+        <header class="l-header">
+            <!-- ===== NAV ===== -->
+            <nav class="nav bd-grid">
+                <div class="nav__toggle" id="nav-toggle">
+                    <img src="{% static 'assets/icons/icon-menu.svg' %}" alt="">
+                </div>
+
+                <div>
+                    <a class="nav__logo"><img src="{% static 'assets/icons/logo.png' %}" alt=""></a>
+                </div>
+
+                <!-- ===== NAV LIST ===== -->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="{% static 'about us.html' %}" class="nav__link">About us</a></li>
+                        <li class="nav__item"><a href="{% static 'contactus.html' %}" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__shop">
+                    <img src="{% static 'assets/icons/shopping-bag.svg' %}" alt="">
+                </div>
+            </nav>
+        </header>
+
+        <!-- ===== HOME ===== -->
+        <main class="l-main bd-grid">
+            <div class="home">
+                <!-- ===== SNEAKER ===== -->
+                <div class="sneaker">
+                    <div class="sneaker__figure">
+                    </div>
+                    <img src= "{% static "C:/Users/lenovo/Desktop/shophub/static/assets/img/imgimg.jpg" %}">
+                    <div>
+
+                    </div>
+
+                    <div class="sneaker__colors">
+                        <span  primary="#A29596" color="#A29596"></span>
+                        <span class="sneaker__color sneaker__colors-two " primary="#111111" color="#111111"></span>
+                    </div>
+                </div>
+
+                <!-- ===== IFORMACION ===== -->
+                <div class="info">
+                    <!-- ===== DATA ===== -->
+                    <div class="data">
+                        <h1 class="data__title">{{name}}</h1>
+                        <p><b>{{amazon_name}}</b></p>
+                    </div>
+
+                    <!-- ===== ACTIONS ===== -->
+
+                    <!-- ===== PRECI ===== -->
+                    <form action="result">
+                         <p><b>DISCLAIMER: This website is still in development.<br> The price of the product may vary from retailers to retailers.</b></p>
+                    <div class="preci">
+                        <span class="preci__title"><b>Rs. {{amazon_price}}</b></span>
+                        <a href = "{{amazon_link}}" class="preci__button">Amazon</a>
+                         <span class="preci__title"><b>Rs.{{flipkart_price}}</b></span>
+                        <a href="{{flipkart_link}}" class="preci__button">Flipkart</a>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- MAIN -->
+        <script src="{% static 'assets/js/main.js' %}"></script>
+    </body>
+</html>

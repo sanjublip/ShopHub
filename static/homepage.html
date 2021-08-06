@@ -1,0 +1,50 @@
+{% load static %}
+<html>
+<head>
+	<title>Shop Hub</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'homepagecss.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="hero">
+		<div class="navbar">
+			<img src="{% static 'logo.png' %}">
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="Ourteam.html">About us</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+			<div class="navbar-icons">
+				<img src="bell.png">
+				<a href="login.html"><img src="user.png"></a>
+				<img src="menu.png">
+			</div>
+		</div>
+		<div class="banner">
+			<div class="left-coloumn">
+				<div class="search-box">
+					<img src="search.png">
+					<input type="text">
+				</div>
+				<h1>Ready to<span> Save Money?</span></h1>
+				<h3>We can find your Ideal deal <span> at the BEST price.</span></h3>
+				<p>Tired of finding the best deal for your products by going to each and every websites out there?<br>RELAX we got YOU! Search your products here and we will do the hard work.</p>
+				<div class="btn">
+					<button type="button" class="primary-btn">Learn More</button>
+					<button type="button">Watch the Process</button>
+				</div>
+				<div class="social-icons">
+					<img src="twitter.png">
+					<img src="instagram.png">
+					<img src="pinterest.png">
+					<img src="facebook.png">
+				</div>
+			</div>
+			<div class="right-coloumn">
+				<img src="feature.png">
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

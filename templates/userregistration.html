@@ -1,0 +1,56 @@
+{% load static %}
+<html>
+<head>
+	<title>login</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<style>
+        body{
+	background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(background.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.login-box{
+	max-width: 700px;
+	float: none;
+	margin: 150px auto;
+}
+.login-left{
+	background-color: rgba(211,211,211,0.5);
+	padding: 30px;
+}
+.login-right{
+	background-color: #fff;
+	padding: 30px;
+}
+.form-control{
+	background-color: transparent :important;
+}
+	</style>
+</head>
+<body>
+<center>
+			<div class="col-md-6 login-right">
+				<h2>register</h2>
+				<form action="register" method="post">
+					{% csrf_token %}
+					<div class="form-group">
+						<label>user name</label>
+						<input type="text" name="user" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>user email</label>
+						<input type="text" name="password" class="form-control" required>
+					</div>
+					<button type="submit" class="btn btn-primary">register</button>
+				</form>
+				<div>
+					{% for message in messages %}
+					<h3>{{message}}</h3>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</center>
+</body>
+</html>

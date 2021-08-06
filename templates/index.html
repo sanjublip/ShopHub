@@ -1,0 +1,211 @@
+{% load static %}
+<html>
+<head>
+	<title>Shop Hub</title>
+	<link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+
+	<style>*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Dosis', sans-serif;
+}
+.hero{
+	width: 80%;
+	margin: auto;
+}
+.navbar{
+	margin: 30px auto;
+	display: flex;
+	align-items: center;
+}
+ul{
+	flex: 1;
+	text-align: right;
+}
+ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 0 25px;
+}
+ul li a{
+	text-decoration: none;
+	color: black;
+	padding: 0 10px;
+	position: relative;
+}
+ul li a::after{
+	content: '';
+	width: 0%;
+	height: 10px;
+	background-color: #f14a60;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -55px;
+	transition: .5s;
+}
+ul li a:hover::after{
+	width: 100%;
+}
+.navbar-icons img{
+	height: 25px;
+	margin-left: 25px;
+	cursor: pointer;
+}
+.navbar-icons{
+	margin-left: 40px;
+}
+.banner{
+	display: flex;
+	margin-top: 80px;
+}
+.left-coloumn,.right-coloumn{
+	flex-basis: 50%;
+
+}
+.left-coloumn,.right-coloumn img{
+	width: 100%;
+}
+.search-box{
+	width: 45%;
+	display: flex;
+	padding-bottom: 3px;
+	border-bottom: 3px;
+	border-radius: 1px  solid #ddd;
+	margin: 10px;
+}
+.search-box img{
+	height: 25px;
+	width: 25px;
+	cursor: pointer;
+}
+.search-box input{
+	width: 100%;
+	margin-left: 15px;
+	font-size: 17px;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	outline:none;
+}
+.left-coloumn h1{
+	font-size: 60px;
+}
+.left-coloumn h3{
+	font-size: 25px;
+}
+span{
+	color: #f14a60;
+}
+.left-coloumn p{
+	font-size: 16px;
+	color: black;
+	margin: 50px 0;
+}
+.grey p{
+	color:#999;
+}
+.btn button{
+	padding: 7px 40px;
+	margin-right: 25px;
+	outline: none;
+	border: 1px solid #fb7381;
+	border-radius: 20px;
+	cursor: pointer;
+	color: #fb7381;
+	background: transparent;
+}
+.btn .primary-btn{
+	background: linear-gradient(#fb7381, #f14a60);
+	box-shadow: 0 2px 15px rgba(248, 38,103,0.26);
+	color: white;
+
+}
+.btn{
+	margin-bottom: 50px;
+}
+.social-icons{
+	width: 200px;
+	text-align: center;
+	opacity: .4;
+	position: relative;
+	margin-left: 160px;
+}
+.social-icons img{
+	height: 20px;
+	margin: 0 14px;
+}
+.social-icons::after{
+	content: '';
+	width: 150px;
+	height: 1px;
+	background:#000;
+	position: absolute;
+	left: -160px;
+	top: 10px;
+}
+.search-box .primary-btn{
+	background: linear-gradient(#fb7381, #f14a60);
+	box-shadow: 0 2px 15px rgba(248, 38,103,0.26);
+	color: white;
+	padding: 7px 20px;
+	margin-right: -70px;
+	outline: none;
+	border: 1px solid #fb7381;
+	border-radius: 20px;
+	cursor: pointer;
+}
+.primary-btn-profile{
+background: linear-gradient(#fb7381, #f14a60);
+	box-shadow: 0 2px 15px rgba(248, 38,103,0.26);
+	color: white;
+	padding: 7px 20px;
+	margin-right: -70px;
+	outline: none;
+	border: 1px solid #fb7381;
+	border-radius: 20px;
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+	<div class="hero">
+		<div class="navbar">
+			<img src="{% static 'logo1.png' %}" width="180px" height="60px">
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="{% static 'about us.html' %}">About us</a></li>
+				<li><a href="{% static 'contactus.html' %}">Contact</a></li>
+			</ul>
+				<form action="login">
+				<button type="submit" class="primary-btn-profile"><a href="accounts/register">profile</a></button>
+				</form>
+		</div>
+		<form action="search">
+		<div class="banner">
+			<div class="left-coloumn">
+				<div class="search-box">
+					<img src="{% static 'search.png' %}">
+					<input type="text" name="name">
+					<button type="submit" class="primary-btn">search</button>
+				</div>
+		</form>
+				<h1>Ready to<span> Save Money?</span></h1>
+				<h3>We can find your Ideal deal <span> at the BEST price.</span></h3>
+		<p><b><font color="black" size="4px">Tired of finding the best deal for your products by going to each and every websites out there? RELAX we got YOU! Search your products here and we will do the hard work.</font></b></p>
+				<p>DISCLAIMER: This website is still in development. The price of the product may vary from retailers to retailers.</p>
+				<div class="social-icons">
+					<img src="{% static 'twitter.png' %}">
+					<img src="{% static 'instagram.png' %}">
+					<img src="{% static 'pinterest.png' %}">
+					<img src="{% static 'facebook.png' %}">
+				</div>
+			</div>
+			<div class="right-coloumn">
+				<img src="{% static 'feature.png' %}">
+			</div>
+		</div>
+	</div>
+</form>
+</body>
+</html>

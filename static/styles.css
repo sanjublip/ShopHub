@@ -1,0 +1,233 @@
+body.back{
+	margin: 0px;
+	padding: 0px;
+	font-family: poppins;
+	align-items: center;
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(background.png);
+}
+body.background{
+
+	width: 100%;
+	height: 100%;
+}
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+#team{
+	width: 100%;
+	height: 30vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.heading{
+	font-size: 1.7rem;
+	color: white;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	margin: 20px;
+}
+.heading i{
+	background-color: #507bfc;
+	box-shadow: 2px 5px 30px rgba(80,123,252,0.4);
+	color: #ffffff;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.9rem;
+	margin: 0px 20px;
+}
+.box{
+	width: 270px;
+	height: 350px;
+	background-color: #ffffff;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.05);
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	border-radius: 10px;
+	margin: 20px;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.top-bar{
+	width: 10%;
+	height: 4px;
+	position: absolute;
+	left: 50%;
+	top: 229px;
+	transform: translateX(64%);
+	background-color: #f14a60;
+	border-radius: 0px 0px 10px 10px;
+}
+.top-bar1{
+	width: 10%;
+	height: 4px;
+	position: absolute;
+	left: 50%;
+	top: 229px;
+	transform: translateX(-160%);
+	background-color: #f14a60;
+	border-radius: 0px 0px 10px 10px;
+}
+.details{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.details1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.details1 img {
+	width: 100px;
+	height: 100px; 
+	border-radius: 50%;
+	overflow: hidden;
+	object-fit: cover;
+	object-position: center;
+}
+.details img {
+	width: 100px;
+	height: 100px; 
+	border-radius: 50%;
+	overflow: hidden;
+	object-fit: cover;
+	object-position: center;
+}
+.details strong{
+	font-weight: 500;
+	color:#141414;
+	letter-spacing: 1px;
+	margin-top: 10px; 
+}
+.details p{
+	font-size: 0.8rem;
+	color: #7a7a7a;
+	margin: 5px 0px;
+}
+.details1 strong{
+	font-weight: 500;
+	color:#141414;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-top: 10px; 
+}
+.details1 p{
+	font-size: 0.8rem;
+	color: #7a7a7a;
+	margin: 5px 0px;
+}
+.top-bar2{
+	width: 10%;
+	height: 4px;
+	position: absolute;
+	left: 50%;
+	top: 229px;
+	transform: translateX(-160%);
+	background-color: #f14a60;
+	border-radius: 0px 0px 10px 10px;
+}
+.details2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.details2 img {
+	width: 100px;
+	height: 100px; 
+	border-radius: 50%;
+	overflow: hidden;
+	object-fit: cover;
+	object-position: center;
+}
+.details2 strong{
+	font-weight: 500;
+	color:#141414;
+	letter-spacing: 1px;
+	margin-top: 10px; 
+}
+.details2 p{
+	font-size: 0.8rem;
+	color: #7a7a7a;
+	margin: 5px 0px;
+}
+.top-bar2{
+	width: 10%;
+	height: 4px;
+	position: absolute;
+	left: 50%;
+	top: 229px;
+	transform: translateX(-387%);
+	background-color: #f14a60;
+	border-radius: 0px 0px 10px 10px;
+}
+.details3 img {
+	width: 100px;
+	height: 100px; 
+	border-radius: 50%;
+	overflow: hidden;
+	object-fit: cover;
+	object-position: center;
+}
+.details3 strong{
+	font-weight: 500;
+	color:#141414;
+	letter-spacing: 1px;
+	margin-top: 10px; 
+}
+.details3 p{
+	font-size: 0.8rem;
+	color: #7a7a7a;
+	margin: 5px 0px;
+}
+.details3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.top-bar3{
+	width: 10%;
+	height: 4px;
+	position: absolute;
+	left: 50%;
+	top: 229px;
+	transform: translateX(287%);
+	background-color: #f14a60;
+	border-radius: 0px 0px 10px 10px;
+}
+.box:hover{
+	box-shadow: 0 2px 15px rgba(248, 38,103,0.26);
+	transition: .5s
+}
+p.quote
+{
+	text-align: center;
+	font-size: 13px;
+}
+p.style{
+	font-weight: 600;
+	color:#141414;
+	letter-spacing: 0px;
+	margin-top: 10px;
+}
+body.background{
+	width: 100%;
+	height: 80%;
+}
